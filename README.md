@@ -22,21 +22,21 @@ outputs defined by their identifiers (which are determined separately).
 Article Level Decision Tree
 ---
 flowchart TD
-    invoice["The output has an associated invoice "]
-    apc["The output can be assigned a total APC, which may be zero" ]
-    apportionment[ "The assigned price is apportioned via some heuristic" ]
-    class[ "The output can be assigned a class average" ]
-    average[ "The output can be assigned an average output price" ]
-    price[ "The final calculated price" ]
-    no_price[ "No price is assigned" ]
+    invoice["The output has an associated invoice "];
+    apc["The output can be assigned a total APC, which may be zero" ];
+    apportionment[ "The assigned price is apportioned via some heuristic" ];
+    class[ "The output can be assigned a class average" ];
+    average[ "The output can be assigned an average output price" ];
+    price[ "The final calculated price" ];
+    no_price[ "No price is assigned" ];
     
-    invoice -- No invoice known --> apc
-    apc -- No APC assignable --> class
-    class -- No class assignable --> average
-    average -- Average not applicable --> no_price
-    invoice -- Invoiced price known --> price
-    apc -- Total APC assigned --> apportionment
-    class -- Class price assigned --> apportionment
-    average -- Average price assigned -> apportionment
-    apportionment -- Proportion of price applied -> price
+    invoice -- No invoice known --> apc;
+    apc -- No APC assignable --> class;
+    class -- No class assignable --> average;
+    average -- Average not applicable --> no_price;
+    invoice -- Invoiced price known --> price;
+    apc -- Total APC assigned --> apportionment;
+    class -- Class price assigned --> apportionment;
+    average -- Average price assigned -> apportionment;
+    apportionment -- Proportion of price applied -> price;
 ```
