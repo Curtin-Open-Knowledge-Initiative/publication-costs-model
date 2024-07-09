@@ -21,7 +21,7 @@ outputs defined by their identifiers (which are determined separately).
 ---
 Article Level Decision Tree
 ---
-flowchart TD
+flowchart TD;
     invoice["The output has an associated invoice "];
     apc["The output can be assigned a total APC, which may be zero" ];
     apportionment["The assigned price is apportioned via some heuristic" ];
