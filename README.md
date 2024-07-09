@@ -23,7 +23,7 @@ Article Level Decision Tree
 ---
 flowchart TD
     invoice[The output has an associated invoice]
-    apc[The output can be assigned a total APC (which may be zero)]
+    apc[The output can be assigned a total APC, which may be zero]
     apportionment[The assigned price is apportioned via some heuristic]
     class[The output can be assigned an average estimated total price for a class of outputs]
     average[The output can be assigned an average output price]
