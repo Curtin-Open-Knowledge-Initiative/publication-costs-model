@@ -34,6 +34,6 @@ flowchart TD;
     invoice -- Invoiced price known --> price;
     apc -- Total APC assigned --> apportionment;
     cls -- Class price assigned --> apportionment;
-    average -- Average price assigned -> apportionment;
-    apportionment -- "Proportion of price applied" -> price;
+    average -- Average price assigned --> apportionment;
+    apportionment -- Proportion of price applied --> price;
 ```
