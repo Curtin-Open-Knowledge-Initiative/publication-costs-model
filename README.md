@@ -28,7 +28,7 @@ flowchart TD;
     no_price["No price is assigned"];
     
     invoice -- No invoice known --> apc;
-    apc -- No APC assignable --> class;
+    apc -- No APC assignable --> cls;
     cls -- No class assignable --> average;
     average -- Average not applicable --> no_price;
     invoice -- Invoiced price known --> price;
