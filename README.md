@@ -35,5 +35,5 @@ flowchart TD;
     apc -- Total APC assigned --> apportionment;
     cls -- Class price assigned --> apportionment;
     average -- Average price assigned -> apportionment;
-    apportionment -- Proportion of price applied -> price;
+    apportionment -- "Proportion of price applied" -> price;
 ```
